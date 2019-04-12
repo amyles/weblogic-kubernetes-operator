@@ -12,10 +12,12 @@ metadata:
     weblogic.resourceVersion: domain-v2
   annotations:
     kubernetes.io/ingress.class: traefik
+    #ingress.kubernetes.io/rewrite-target: /
+    #ingress.kubernetes.io/app-root: "aussie-tripper"
 spec:
   rules:
-  - host: '{{ .Values.traefik.hostname }}'
-    http:
+#  - host: '{{ .Values.traefik.hostname }}'
+  - http:
       paths:
       - path:
         backend:
