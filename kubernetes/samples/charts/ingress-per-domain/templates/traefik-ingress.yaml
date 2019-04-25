@@ -16,7 +16,6 @@ metadata:
     #ingress.kubernetes.io/app-root: "aussie-tripper"
 spec:
   rules:
-#  - host: '{{ .Values.traefik.hostname }}'
   - http:
       paths:
       - path:
