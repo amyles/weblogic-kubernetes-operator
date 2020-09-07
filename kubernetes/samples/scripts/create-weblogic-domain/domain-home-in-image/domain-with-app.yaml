@@ -18,7 +18,7 @@ spec:
   # If the domain home is in the image
   domainHomeInImage: true
   # The WebLogic Server Docker image that the Operator uses to start the domain
-  image: "lhr.ocir.io/oscemea001/nykredit/aussietripper:latest"
+  image: "host-8-18.osc.uk.oracle.com:5000/nykredit/aussietripper:latest"
   # imagePullPolicy defaults to "Always" if image version is :latest
   imagePullPolicy: "Always"
   # Identify which Secret contains the credentials for pulling an image
